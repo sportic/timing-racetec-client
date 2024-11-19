@@ -37,7 +37,7 @@ class ResultsPage extends AbstractParser
     protected function parseRaces()
     {
         $return = [];
-        $eventMenu = $this->getCrawler()->filter('#ctl00_Content_Main_pnlEventMenu');
+        $eventMenu = $this->getCrawler()->filter('#ctl00_Content_Main_divEvents');
         if ($eventMenu->count() > 0) {
             $raceLinks = $eventMenu->filter('div.tab > a');
             foreach ($raceLinks as $link) {
@@ -97,11 +97,17 @@ class ResultsPage extends AbstractParser
      */
     protected function getResultsRows()
     {
-        $resultsTable = $this->getCrawler()->filter(
-            '#ctl00_Content_Main_divGrid  > table > tbody > tr'
-        );
-        $resultsRows = $resultsTable;
-        return $resultsRows;
+        $selectors = [
+            '#ctl00_Content_Main_divGrid  > table > tr',
+            '#ctl00_Content_Main_divGrid  > table > tbody > tr',
+        ];
+        foreach ($selectors as $selector) {
+            $resultsTable = $this->getCrawler()->filter($selector);
+            if ($resultsTable->count() > 0) {
+                return $resultsTable;
+            }
+        }
+        return false;
     }
 
     /**
@@ -182,6 +188,10 @@ class ResultsPage extends AbstractParser
     {
         $parameters = [];
         $colNum = 0;
+        if ($row->childNodes->count() < 5) {
+            var_dump('skipping');
+            return false;
+        }
         foreach ($row->childNodes as $cell) {
             if ($cell instanceof DOMElement) {
                 $parameters = $this->parseResultsRowCell($colNum, $cell, $parameters);
@@ -190,8 +200,8 @@ class ResultsPage extends AbstractParser
         }
         if (count($parameters)) {
             if ($this->getScraper()->isGenderCategoryMerge()) {
-                $gender = isset($parameters['gender']) ? $parameters['gender'] : '';
-                $category = isset($parameters['category']) ? $parameters['category'] : '';
+                $gender = $parameters['gender'] ?? '';
+                $category = $parameters['category'] ?? '';
                 $parameters['category'] = trim($gender . ' ' . $category);
             }
             return new Result($parameters);
@@ -219,9 +229,8 @@ class ResultsPage extends AbstractParser
             } elseif ($field == 'fullName') {
                 $links = $cell->getElementsByTagName('a');
                 $parameters['href'] = $links->item(0)->getAttribute('href');
-
                 parse_str(parse_url($parameters['href'], PHP_URL_QUERY), $urlParameters);
-                $parameters['id'] = isset($urlParameters['uid']) ? $urlParameters['uid'] : '';
+                $parameters['id'] = $urlParameters['uid'] ?? '';
                 $passedParams = ['genderCategoryMerge' => $this->getScraper()->isGenderCategoryMerge() ? '1' : '0'];
                 $parameters['id'] .= '::' . base64_encode(serialize($passedParams));
 

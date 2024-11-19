@@ -16,7 +16,7 @@ class RaceTecClientTest extends AbstractTest
         $client = new RaceTecClient();
         self::assertTrue($client->supportsDetect());
 
-        $result = $client->detect('http://cronometraj.racetecresults.com/Results.aspx?CId=16648&RId=2111&EId=1');
+        $result = $client->detect('http://cronometraj.racetecresults.com/results.aspx?CId=16648&RId=2111&EId=1');
         self::assertInstanceOf(DetectorResult::class, $result);
         self::assertTrue($result->isValid());
 //        self::assertInstanceOf(RaceTecClient::class, $result->getClient());

@@ -2,11 +2,11 @@
 	Ecomarathon 2017
 </title><meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"><link href="/css/rtv2_v2.css" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-6F4SKJ6H66&amp;l=dataLayer&amp;cx=c"></script><script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <script src="js/ltw.js" type="text/javascript"></script>
+    <script src="js/clocks.js" type="text/javascript"></script>
     <script src="css/jquery.min.js" type="text/javascript"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     
@@ -35,7 +35,7 @@
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
 <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExMDE2NTQ4OTcPFgIeE1ZhbGlkYXRlUmVxdWVzdE1vZGUCARYCZg8PFgIeC015UGFnZVRpdGxlBRBFY29tYXJhdGhvbiAyMDE3ZBYCAgEPZBYKAgEPFgIeB1Zpc2libGVoZAIDD2QWCgIBDxYCHgVzdHlsZQUZYmFja2dyb3VuZC1jb2xvcjojMDc2OUFEOxYEAgEPDxYGHgRUZXh0BRBFY29tYXJhdGhvbiAyMDE3HglGb3JlQ29sb3IJ/////x4EXyFTQgIEZGQCAw8PFgYfBAUKNiBNYXkgMjAxNx8FCf////8fBgIEZGQCAw8WBB4FY2xhc3MFRG5hdmJhciBuYXZiYXItdGhpbiBuYXZiYXItZGFyayBuYXZiYXItZXhwYW5kLW1kIG5hdmJhci10b2dnbGVhYmxlLW1kHwMFNnBhZGRpbmc6MC4ycmVtO2JhY2tncm91bmQtY29sb3I6IzA3NjlBRDtjb2xvcjojRkZGRkZGOxYUAgMPDxYGHwUJ/////x8GAgQfAmhkZAIFDxYCHwcFGW5hdi1pdGVtIGZvbnQtd2VpZ2h0LWJvbGQWAgIBDw8WCB8EBQdSZXN1bHRzHwUJ/////x4LTmF2aWdhdGVVcmwFJn4vUmVzdWx0cy5hc3B4P0NJZD0xNjY0OCZSSWQ9MTE3JkVJZD0xHwYCBGRkAgcPZBYCAgEPDxYGHwUJ/////x8GAgQfAmhkZAIJD2QWAgIBDw8WBh8FCf////8fBgIEHwJoZGQCCw9kFgICAQ8PFgYfBQn/////HwYCBB8CaGRkAg0PZBYCAgEPDxYIHwQFB0RldGFpbHMfBQn/////HwgFHn4vU3RhdHMuYXNweD9DSWQ9MTY2NDgmUklkPTExNx8GAgRkZAIPD2QWAgIBDw8WBh8FCf////8fBgIEHwJoZGQCEQ8WAh8CaBYCAgEPFgIfAwUOY29sb3I6I0ZGRkZGRjsWAgIBDw8WBh8EBQVMaW5rcx8FCf////8fBgIEZGQCEw8WAh8CaBYCAgEPDxYEHwUJ/////x8GAgRkZAIVD2QWAgIBDw8WCB8FCf////8fCAUBIx8EBSQ8aSBjbGFzcz0iZmFzIGZhLWhvbWUiPiZuYnNwPC9pPkhvbWUfBgIEZGQCBQ8WBB8DBTlwYWRkaW5nLWxlZnQ6MTBweDtiYWNrZ3JvdW5kLWNvbG9yOiMwNzY5QUQ7Y29sb3I6I0ZGRkZGRjsfAmhkAgkPFgIfAmhkAgsPFgIfAwUTYmFja2dyb3VuZC1jb2xvcjojOxYEAgEPZBYEAgEPZBYCZg8PFgYeCENzc0NsYXNzBQlpbWctZmx1aWQeCEltYWdlVXJsBRp+L0ltYWdlcy9DbGllbnRzLzE2NjQ4LnBuZx8GAgJkZAIDDw8WCB8JBRJkLW5vbmUgZC1tZC1pbmxpbmUfCgU2aHR0cHM6Ly9pbWFnZXMucmFjZXRlYy5uZXQvcmVzdWx0cy90bXIvMTY2NDhfVGltZXIucG5nHwgFASMfBgICZGQCAw9kFgQCAQ9kFgJmDw8WBh8JBQ9pbWctZmx1aWQgdy0xMDAfCgUafi9JbWFnZXMvQ2xpZW50cy8xNjY0OC5wbmcfBgICZGQCAw8PFgQfCgU2aHR0cHM6Ly9pbWFnZXMucmFjZXRlYy5uZXQvcmVzdWx0cy90bXIvMTY2NDhfVGltZXIucG5nHwgFASNkZAIFD2QWEgIBDxYCHwJnFgwCAQ8PFgIfBAUOUGFsaWNpICBWaW9yZWxkZAIDDxYCHwJoZAIFDxYCHwMFGWJhY2tncm91bmQtY29sb3I6IzA3NjlBRDsWAgIBDw8WBh8EBQExHwUJ/////x8GAgRkZAIHD2QWAgIBDw8WAh8EBQhNYXJhdGhvbmRkAgkPZBYCAgEPDxYEHwkFcnRhYmxlIHRhYmxlLWJvcmRlcmxlc3MgdGFibGUtc20gdGFibGUtaG92ZXIgc21hbGwgYWxpZ24tbWlkZGxlIGx0dy1jZWxsLWNlbnRlciBsdHctbWFyZ2luLWJvdHRvbS0wIGx0dy10YWJsZS1maXhlZB8GAgJkZAILDxYCHwJoZAIDDxYCHwJnFgoCAQ8WAh8CZxYWAgEPDxYCHwQFC0ZpbmlzaCBUaW1lZGQCAw8PFgQfBAUHT1ZFUkFMTB8CZ2RkAgUPDxYIHwkFDmx0dy1mb250LWxhcmdlHwQFBTEvNjU1HwYCAh8CZ2RkAgcPDxYEHwQFCENBVEVHT1JZHwJnZGQCCQ8PFggfCQUObHR3LWZvbnQtbGFyZ2UfBAUFMS8zMzIfBgICHwJnZGQCCw8PFgQfBAUGR0VOREVSHwJnZGQCDQ8PFggfCQUObHR3LWZvbnQtbGFyZ2UfBAUFMS81MzYfBgICHwJnZGQCDw8WAh8CaBYCAgEPDxYEHwQFBjAgTEFQUx8CaGRkAhEPZBYCAgEPDxYCHwQFCDAzOjI5OjI0ZGQCEw8WAh8CaBYCAgEPDxYEHwQFBjAgTEFQUx8CaGRkAhUPDxYCHwQFCDAzOjI5OjI0ZGQCAw8WAh8CaBYSAgEPDxYCHwQFCE5ldCBUaW1lZGQCAw8PFgQfBAUHT1ZFUkFMTB8CaGRkAgUPDxYIHwkFDmx0dy1mb250LWxhcmdlHwQFBTEvNjU1HwYCAh8CZ2RkAgcPDxYEHwQFCENBVEVHT1JZHwJoZGQCCQ8PFggfCQUObHR3LWZvbnQtbGFyZ2UfBAUFMS8zMzIfBgICHwJnZGQCCw8PFgQfBAUGR0VOREVSHwJoZGQCDQ8PFggfCQUObHR3LWZvbnQtbGFyZ2UfBAUFMS81MzYfBgICHwJnZGQCDw8PFgIfBAUIMDM6Mjk6MDlkZAIRDw8WAh8EBQgwMzoyOTowOWRkAgUPFgIfAmhkAgcPFgIfAmhkAgkPFgIfAmcWAgIBDxYCHglpbm5lcmh0bWwFiQI8ZGl2IGNsYXNzPSJkLWZsZXggZmxleC13cmFwIGp1c3RpZnktY29udGVudC1jZW50ZXIgbHR3LXNoYXJlLXBhZCI+PGRpdj48aSBjbGFzcz0iZmEgZmEtcHJpbnQiIHN0eWxlPSJ2ZXJ0aWNhbC1hbGlnbjogbWlkZGxlOyBjb2xvcjogIzAwN2JmZiI+PC9pPjxhIGNsYXNzPSJsdHctc2hhcmUtcGFkIiAgc3R5bGUgPSJjb2xvcjogIzAwMCIgaHJlZj0iY2VydC5hc3B4P3VpZD0xNjY0OC0xMTctMS00MjE0NyI+UHJpbnQgQ2VydGlmaWNhdGU8L2E+PC9kaXY+PC9kaXY+ZAIFDxYCHwJoZAIHDxYCHwJoZAIJD2QWAgIBDxYCHwJoZAILDw8WAh8EBSNSb3RhdGUgeW91ciBkZXZpY2UgdG8gc2VlIG1vcmUgZGF0YWRkAg0PFgIfAmcWAgIBDw8WAh8EBQpBbGwgU3BsaXRzZGQCDw8WAh8CaGQCEQ8PFgIfAmhkZAIHD2QWBAIBDxYCHwJoZAIDDw8WBh8KBTZodHRwczovL2ltYWdlcy5yYWNldGVjLm5ldC9yZXN1bHRzL3Rtci8xNjY0OF9UaW1lci5wbmcfCAUBIx8CaGRkAgkPFgIfAmgWAgIBDw8WAh8KBSZodHRwczovL2ltYWdlcy5yYWNldGVjLm5ldC9SYWNlVGVjLnBuZ2RkZKi3J/vx66G17zYAin2lDTRivCnx">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg1ODE2NjI3MQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmDw8WAh4LTXlQYWdlVGl0bGUFEEVjb21hcmF0aG9uIDIwMTdkFgICAQ9kFgwCAQ8WAh4HVmlzaWJsZWhkAgMPFgIfAmhkAgUPZBYMAgEPFgIeBXN0eWxlBRliYWNrZ3JvdW5kLWNvbG9yOiMwNzY5QUQ7FgQCAQ8PFgYeBFRleHQFEEVjb21hcmF0aG9uIDIwMTceCUZvcmVDb2xvcgn/////HgRfIVNCAgRkZAIDDw8WBh8EBQo2IE1heSAyMDE3HwUJ/////x8GAgRkZAIDDxYEHgVjbGFzcwVEbmF2YmFyIG5hdmJhci10aGluIG5hdmJhci1kYXJrIG5hdmJhci1leHBhbmQtbWQgbmF2YmFyLXRvZ2dsZWFibGUtbWQfAwU2cGFkZGluZzowLjJyZW07YmFja2dyb3VuZC1jb2xvcjojMDc2OUFEO2NvbG9yOiNGRkZGRkY7FhYCAw8PFgYfBQn/////HwYCBB8CaGRkAgUPFgIfBwUZbmF2LWl0ZW0gZm9udC13ZWlnaHQtYm9sZBYCAgEPDxYIHwQFB1Jlc3VsdHMfBQn/////HgtOYXZpZ2F0ZVVybAUmfi9SZXN1bHRzLmFzcHg/Q0lkPTE2NjQ4JlJJZD0xMTcmRUlkPTEfBgIEZGQCBw9kFgICAQ8PFgYfBQn/////HwYCBB8CaGRkAgkPZBYCAgEPDxYGHwUJ/////x8GAgQfAmhkZAILD2QWAgIBDw8WBh8FCf////8fBgIEHwJoZGQCDQ9kFgICAQ8PFggfBAUHRGV0YWlscx8FCf////8fCAUefi9TdGF0cy5hc3B4P0NJZD0xNjY0OCZSSWQ9MTE3HwYCBGRkAg8PZBYCAgEPDxYGHwUJ/////x8GAgQfAmhkZAIRDxYCHwJoFgICAQ8WAh8DBQ5jb2xvcjojRkZGRkZGOxYCAgEPDxYGHwQFBUxpbmtzHwUJ/////x8GAgRkZAITD2QWAgIBDw8WBB8FCf////8fBgIEZGQCFQ8WAh8CaBYCAgEPDxYEHwUJ/////x8GAgRkZAIXD2QWAgIBDw8WCB8FCf////8fCAUBIx8EBSQ8aSBjbGFzcz0iZmFzIGZhLWhvbWUiPiZuYnNwPC9pPkhvbWUfBgIEZGQCBQ8WBB8DBTlwYWRkaW5nLWxlZnQ6MTBweDtiYWNrZ3JvdW5kLWNvbG9yOiMwNzY5QUQ7Y29sb3I6I0ZGRkZGRjsfAmhkAgkPFgIfAmhkAgsPFgIfAmhkAg0PFgQfBwUiZC1mbGV4IGp1c3RpZnktY29udGVudC1jZW50ZXIgcGItMR8DBSNiYWNrZ3JvdW5kLWNvbG9yOiM7b3ZlcmZsb3c6aGlkZGVuOxYEAgEPFgIfBwURZC1ub25lIGQtc20tYmxvY2sWBAIBD2QWAmYPDxYGHghDc3NDbGFzcwUJaW1nLWZsdWlkHghJbWFnZVVybAUafi9JbWFnZXMvQ2xpZW50cy8xNjY0OC5wbmcfBgICZGQCAw8PFggfCQUSZC1ub25lIGQtbWQtaW5saW5lHwoFNmh0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L3Jlc3VsdHMvdG1yLzE2NjQ4X1RpbWVyLnBuZx8IBQEjHwYCAmRkAgMPZBYEAgEPZBYCZg8PFgYfCQUPaW1nLWZsdWlkIHctMTAwHwoFGn4vSW1hZ2VzL0NsaWVudHMvMTY2NDgucG5nHwYCAmRkAgMPDxYEHwoFNmh0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L3Jlc3VsdHMvdG1yLzE2NjQ4X1RpbWVyLnBuZx8IBQEjZGQCBw9kFhACAQ8WAh8CZxYOAgEPDxYCHwQFDlBhbGljaSAgVmlvcmVsZGQCAw8WAh8CaGQCBQ8WAh8DBRliYWNrZ3JvdW5kLWNvbG9yOiMwNzY5QUQ7FgICAQ8PFgYfBAUBMR8FCf////8fBgIEZGQCBw9kFgICAQ8PFgIfBAUITWFyYXRob25kZAIJD2QWAgIBDw8WBB8JBXJ0YWJsZSB0YWJsZS1ib3JkZXJsZXNzIHRhYmxlLXNtIHRhYmxlLWhvdmVyIHNtYWxsIGFsaWduLW1pZGRsZSBsdHctY2VsbC1jZW50ZXIgbHR3LW1hcmdpbi1ib3R0b20tMCBsdHctdGFibGUtZml4ZWQfBgICZGQCCw8WAh8DBRliYWNrZ3JvdW5kLWNvbG9yOiMwNzY5QUQ7FgICAQ8PFgYfBQn/////HwgFOWh0dHBzOi8vcmVzdWx0cy5maW5pc2h0aW1lLmNvLnphL0NvbXJhZGVzQXRobGV0ZS5hc3B4P2lkPR8GAgRkZAINDxYCHwJoZAIDDxYCHwJnFgoCAQ8WAh8CZxYWAgEPDxYCHwQFC0ZpbmlzaCBUaW1lZGQCBQ8PFgQfBAUHT1ZFUkFMTB8CZ2RkAgcPDxYIHwkFDmx0dy1mb250LWxhcmdlHwQFBTEvNjU1HwYCAh8CZ2RkAgkPDxYEHwQFCENBVEVHT1JZHwJnZGQCCw8PFggfCQUObHR3LWZvbnQtbGFyZ2UfBAUFMS8zMzIfBgICHwJnZGQCDQ8PFgQfBAUGR0VOREVSHwJnZGQCDw8PFggfCQUObHR3LWZvbnQtbGFyZ2UfBAUFMS81MzYfBgICHwJnZGQCEQ8WAh8CaBYCAgEPDxYEHwQFBjAgTEFQUx8CaGRkAhMPZBYCAgEPDxYCHwQFCDAzOjI5OjI0ZGQCFQ8WAh8CaBYCAgEPDxYEHwQFBjAgTEFQUx8CaGRkAhcPDxYCHwQFCDAzOjI5OjI0ZGQCAw8WAh8CaBYWAgEPFgIfAmhkAgMPDxYCHwQFCE5ldCBUaW1lZGQCBQ8WAh8CaGQCBw8PFgQfBAUHT1ZFUkFMTB8CaGRkAgkPDxYIHwkFDmx0dy1mb250LWxhcmdlHwQFBTEvNjU1HwYCAh8CZ2RkAgsPDxYEHwQFCENBVEVHT1JZHwJoZGQCDQ8PFggfCQUObHR3LWZvbnQtbGFyZ2UfBAUFMS8zMzIfBgICHwJnZGQCDw8PFgQfBAUGR0VOREVSHwJoZGQCEQ8PFggfCQUObHR3LWZvbnQtbGFyZ2UfBAUFMS81MzYfBgICHwJnZGQCEw8PFgIfBAUIMDM6Mjk6MDlkZAIVDw8WAh8EBQgwMzoyOTowOWRkAgUPFgIfAmhkAgcPFgIfAmhkAgkPFgIfAmcWAgIBDxYCHglpbm5lcmh0bWwFpQI8ZGl2IGNsYXNzPSJkLWZsZXggZmxleC13cmFwIGp1c3RpZnktY29udGVudC1jZW50ZXIgbHR3LXNoYXJlLXBhZCI+PGRpdj48aW1nIHNyYz0iaHR0cHM6Ly9pbWFnZXMucmFjZXRlYy5uZXQvZmEvcHJpbnQuc3ZnIiBzdHlsZT0id2lkdGg6IDIwcHg7IGhlaWdodDogMjBweCIvPjxhIGNsYXNzPSJsdHctc2hhcmUtcGFkIiB0YXJnZXQ9Il9ibGFuayIgc3R5bGUgPSJjb2xvcjogIzAwMCIgaHJlZj0iY2VydC5hc3B4P3VpZD0xNjY0OC0xMTctMS00MjE0NyIiPlByaW50IENlcnRpZmljYXRlPC9hPjwvZGl2PjwvZGl2PmQCBQ8WAh8CaGQCBw8WAh8CaGQCCQ9kFgICAQ8WAh8CaGQCCw8PFgIfBAUjUm90YXRlIHlvdXIgZGV2aWNlIHRvIHNlZSBtb3JlIGRhdGFkZAINDxYCHwJnFgICAQ8PFgIfBAUKQWxsIFNwbGl0c2RkAg8PFgIfAmhkAgkPZBYCAgEPDxYGHwoFNmh0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L3Jlc3VsdHMvdG1yLzE2NjQ4X1RpbWVyLnBuZx8IBQEjHwJoZGQCCw8WAh8CaBYEAgEPDxYCHwoFJmh0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L1JhY2VUZWMucG5nZGQCAw8PFgIfBAULJmNvcHk7IDIwMjRkZGSjNxj3ahyu48GBEQT836AtNU4low==">
 </div>
 
 <script type="text/javascript">
@@ -61,13 +61,14 @@ function __doPostBack(eventTarget, eventArgument) {
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EF87DEBB">
 </div>
-    <script type="text/javascript">
-        $(window).on('load', function () {
-            $('#ctl00_popup').modal('show');
-        });
-    </script>
+        <script type="text/javascript">
+            $(window).on('load', function () {
+                $('#ctl00_popup').modal('show');
+            });
+        </script>
 
 
+        
         
         <div id="ctl00_divAll">
             <div id="ctl00_divRaceName" class="d-flex justify-content-between" style="background-color:#0769AD;">
@@ -104,6 +105,7 @@ function __doPostBack(eventTarget, eventArgument) {
                             
                         </li>
                         
+                        
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         
@@ -128,16 +130,15 @@ function __doPostBack(eventTarget, eventArgument) {
                 </div>
             </div>
             
-            <div id="ctl00_divLogo" class="d-flex justify-content-center pb-1" align="center" style="background-color:#;">
-                <div class="row">
-                    <div id="ctl00_divLargeLogo" class="d-none d-sm-block">
-                        <a id="ctl00_hlLargeLogo" target="_blank"><img id="ctl00_imgLargeLogo" class="img-fluid" src="Images/Clients/16648.png" style="border-width:0px;"></a>
-                        <a id="ctl00_hlTimerImageTop" class="d-none d-md-inline" href="#"><img src="https://images.racetec.net/results/tmr/16648_Timer.png" alt="" style="border-width:0px;"></a>
-                    </div>
-                    <div id="ctl00_divSmallLogo" class="d-block d-sm-none">
-                        <a id="ctl00_hlSmallLogo" target="_blank"><img id="ctl00_imgSmallLogo" class="img-fluid w-100" src="Images/Clients/16648.png" style="border-width:0px;"></a>
-                        <a id="ctl00_hlSmallTimerImageTop" href="#"><img src="https://images.racetec.net/results/tmr/16648_Timer.png" alt="" style="border-width:0px;"></a>
-                    </div>
+            
+            <div id="ctl00_divLogo" align="center" class="d-flex justify-content-center pb-1" style="background-color:#;overflow:hidden;">
+                <div id="ctl00_divLargeLogo" class="d-none d-sm-block">
+                    <a id="ctl00_hlLargeLogo" target="_blank"><img id="ctl00_imgLargeLogo" class="img-fluid" src="Images/Clients/16648.png" style="border-width:0px;"></a>
+                    <a id="ctl00_hlTimerImageTop" class="d-none d-md-inline" href="#"><img src="https://images.racetec.net/results/tmr/16648_Timer.png" alt="" style="border-width:0px;"></a>
+                </div>
+                <div id="ctl00_divSmallLogo" class="d-block d-sm-none">
+                    <a id="ctl00_hlSmallLogo" target="_blank"><img id="ctl00_imgSmallLogo" class="img-fluid w-100" src="Images/Clients/16648.png" style="border-width:0px;"></a>
+                    <a id="ctl00_hlSmallTimerImageTop" href="#"><img src="https://images.racetec.net/results/tmr/16648_Timer.png" alt="" style="border-width:0px;"></a>
                 </div>
             </div>
         </div>
@@ -188,14 +189,18 @@ function __doPostBack(eventTarget, eventArgument) {
 </tbody></table>
                         </div>
                         
+
+                        
                     </div>
                 </div>
                 <div id="ctl00_Content_Main_divRight" class="col-12 col-lg-8">
                     <div class="ltw-raised-panel" align="center">
                         <div id="ctl00_Content_Main_divTime1" class="row">
                             <div class="col-7">
-                                <div style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #CCCCCC">
+                                <div>
                                     <span id="ctl00_Content_Main_lblTimeCaption1" class="h3">Finish Time</span>
+                                </div>
+                                <div id="ctl00_Content_Main_divGunTimeDivider" style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #CCCCCC">
                                 </div>
                                 <div class="row">
                                     <div class="col-6 col-sm-4 ltw-padding-0">
@@ -247,8 +252,10 @@ function __doPostBack(eventTarget, eventArgument) {
                         
                         
                         <div id="ctl00_Content_Main_divSocial2" class="ltw-raised-panel" align="center">
-                            <div id="ctl00_Content_Main_divSocialMedia2"><div class="d-flex flex-wrap justify-content-center ltw-share-pad"><div><i class="fa fa-print" style="vertical-align: middle; color: #007bff"></i><a class="ltw-share-pad" style="color: #000" href="cert.aspx?uid=16648-117-1-42147">Print Certificate</a></div></div></div>
+                            <div id="ctl00_Content_Main_divSocialMedia2"><div class="d-flex flex-wrap justify-content-center ltw-share-pad"><div><img src="https://images.racetec.net/fa/print.svg" style="width: 20px; height: 20px"><a class="ltw-share-pad" target="_blank" style="color: #000" href="cert.aspx?uid=16648-117-1-42147">Print Certificate</a></div></div></div>
                         </div>
+                    </div>
+                    <div id="ctl00_Content_Main_divTracker" class="row d-flex justify-content-center pb-1 pt-1">
                     </div>
                 </div>
 
@@ -270,9 +277,9 @@ function __doPostBack(eventTarget, eventArgument) {
                         </div>
                         <div>
                             <div id="ctl00_Content_Main_divSplitGrid" align="center">
-                            <table class="table table-bordered table-striped table-sm small" border="0">
+                            <table class="table table-bordered table-sm small" border="0">
 	<tbody><tr>
-		<th class="ltw-cell-center ltw-cell-left " style="width:100%;">Name</th><th class="ltw-cell-center " style="width:100%;">Time<br>(Time of Day)</th><th class="ltw-cell-center " style="width:100%;">Leg Time</th><th class="ltw-cell-center d-none d-sm-table-cell" style="width:100%;">Pos<br>(C/Pos)</th><th class="ltw-cell-center d-none d-sm-table-cell" style="width:100%;">G/Pos</th>
+		<td class="ltw-cell-center ltw-cell-left " style="width:100%;">Name</td><td class="ltw-cell-center " style="width:100%;">Time<br>(Time of Day)</td><td class="ltw-cell-center " style="width:100%;">Leg Time</td><td class="ltw-cell-center d-none d-sm-table-cell" style="width:100%;">Pos<br>(C/Pos)</td><td class="ltw-cell-center d-none d-sm-table-cell" style="width:100%;">G/Pos</td>
 	</tr><tr>
 		<td class="ltw-cell-padless ltw-cell-left " style="font-weight:bold;">KM 14,2</td><td class="ltw-cell-padless ltw-cell-center">01:05:22<br>(10:06:27)</td><td class="ltw-cell-padless ltw-cell-center" style="font-weight:normal;">01:05:08</td><td class="ltw-cell-padless ltw-cell-center d-none d-sm-table-cell">3<br>(2)</td><td class="ltw-cell-padless ltw-cell-center d-none d-sm-table-cell" style="font-weight:normal;">3</td>
 	</tr><tr>
@@ -291,17 +298,9 @@ function __doPostBack(eventTarget, eventArgument) {
         </div>
     </div>
 
-    <br>
-    <div align="center">
-        
-    </div>
-
         </div>
         <br>
         <div id="ctl00_divFooter" class="container">
-            <div class="d-flex justify-content-center hidden-xs">
-                
-            </div>
             <div class="d-flex justify-content-center pb-3">
                 
                 <a id="ctl00_hlSB1"></a>

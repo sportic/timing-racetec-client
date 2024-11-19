@@ -2,11 +2,11 @@
 	Timotion 2017
 </title><meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"><link href="/css/rtv2_v2.css" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-6F4SKJ6H66&amp;l=dataLayer&amp;cx=c"></script><script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <script src="js/ltw.js" type="text/javascript"></script>
+    <script src="js/clocks.js" type="text/javascript"></script>
     <script src="css/jquery.min.js" type="text/javascript"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     
@@ -35,7 +35,7 @@
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
 <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExMDE2NTQ4OTcPFgIeE1ZhbGlkYXRlUmVxdWVzdE1vZGUCARYCZg8PFgIeC015UGFnZVRpdGxlBQ1UaW1vdGlvbiAyMDE3ZBYCAgEPZBYKAgEPFgIeB1Zpc2libGVoZAIDD2QWCgIBDxYCHgVzdHlsZQUZYmFja2dyb3VuZC1jb2xvcjojMDc2OUFEOxYEAgEPDxYGHgRUZXh0BQ1UaW1vdGlvbiAyMDE3HglGb3JlQ29sb3IJ/////x4EXyFTQgIEZGQCAw8PFgYfBAULMjMgQXByIDIwMTcfBQn/////HwYCBGRkAgMPFgQeBWNsYXNzBURuYXZiYXIgbmF2YmFyLXRoaW4gbmF2YmFyLWRhcmsgbmF2YmFyLWV4cGFuZC1tZCBuYXZiYXItdG9nZ2xlYWJsZS1tZB8DBTZwYWRkaW5nOjAuMnJlbTtiYWNrZ3JvdW5kLWNvbG9yOiMwNzY5QUQ7Y29sb3I6I0ZGRkZGRjsWFAIDDw8WBh8FCf////8fBgIEHwJoZGQCBQ8WAh8HBRluYXYtaXRlbSBmb250LXdlaWdodC1ib2xkFgICAQ8PFggfBAUHUmVzdWx0cx8FCf////8eC05hdmlnYXRlVXJsBSZ+L1Jlc3VsdHMuYXNweD9DSWQ9MTY2NDgmUklkPTExNiZFSWQ9MR8GAgRkZAIHD2QWAgIBDw8WBh8FCf////8fBgIEHwJoZGQCCQ9kFgICAQ8PFgYfBQn/////HwYCBB8CaGRkAgsPZBYCAgEPDxYGHwUJ/////x8GAgQfAmhkZAIND2QWAgIBDw8WCB8EBQdEZXRhaWxzHwUJ/////x8IBR5+L1N0YXRzLmFzcHg/Q0lkPTE2NjQ4JlJJZD0xMTYfBgIEZGQCDw9kFgICAQ8PFgYfBQn/////HwYCBB8CaGRkAhEPFgIfAmgWAgIBDxYCHwMFDmNvbG9yOiNGRkZGRkY7FgICAQ8PFgYfBAUFTGlua3MfBQn/////HwYCBGRkAhMPFgIfAmgWAgIBDw8WBB8FCf////8fBgIEZGQCFQ9kFgICAQ8PFggfBQn/////HwgFASMfBAUkPGkgY2xhc3M9ImZhcyBmYS1ob21lIj4mbmJzcDwvaT5Ib21lHwYCBGRkAgUPFgQfAwU5cGFkZGluZy1sZWZ0OjEwcHg7YmFja2dyb3VuZC1jb2xvcjojMDc2OUFEO2NvbG9yOiNGRkZGRkY7HwJoZAIJDxYCHwJoZAILDxYCHwMFE2JhY2tncm91bmQtY29sb3I6IzsWBAIBD2QWBAIBD2QWAmYPDxYGHghDc3NDbGFzcwUJaW1nLWZsdWlkHghJbWFnZVVybAUafi9JbWFnZXMvQ2xpZW50cy8xNjY0OC5wbmcfBgICZGQCAw8PFggfCQUSZC1ub25lIGQtbWQtaW5saW5lHwoFNmh0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L3Jlc3VsdHMvdG1yLzE2NjQ4X1RpbWVyLnBuZx8IBQEjHwYCAmRkAgMPZBYEAgEPZBYCZg8PFgYfCQUPaW1nLWZsdWlkIHctMTAwHwoFGn4vSW1hZ2VzL0NsaWVudHMvMTY2NDgucG5nHwYCAmRkAgMPDxYEHwoFNmh0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L3Jlc3VsdHMvdG1yLzE2NjQ4X1RpbWVyLnBuZx8IBQEjZGQCBQ9kFhICAQ8WAh8CZxYMAgEPDxYCHwQFDEFsaW4gQnVnYXJpIGRkAgMPFgIfAmhkAgUPFgIfAwUZYmFja2dyb3VuZC1jb2xvcjojMDc2OUFEOxYCAgEPDxYGHwQFATIfBQn/////HwYCBGRkAgcPZBYCAgEPDxYCHwQFC1NlbWltYXJhdG9uZGQCCQ9kFgICAQ8PFgQfCQVydGFibGUgdGFibGUtYm9yZGVybGVzcyB0YWJsZS1zbSB0YWJsZS1ob3ZlciBzbWFsbCBhbGlnbi1taWRkbGUgbHR3LWNlbGwtY2VudGVyIGx0dy1tYXJnaW4tYm90dG9tLTAgbHR3LXRhYmxlLWZpeGVkHwYCAmRkAgsPFgIfAmhkAgMPFgIfAmcWCgIBDxYCHwJoFhYCAQ8PFgIfBAULRmluaXNoIFRpbWVkZAIDDw8WBB8EBQdPVkVSQUxMHwJoZGQCBQ8PFggfCQUObHR3LWZvbnQtbGFyZ2UfBAUFMS8yMjkfBgICHwJnZGQCBw8PFgQfBAUIQ0FURUdPUlkfAmhkZAIJDw8WCB8JBQ5sdHctZm9udC1sYXJnZR8EBQUxLzE3Mx8GAgIfAmdkZAILDw8WBB8EBQZHRU5ERVIfAmhkZAINDw8WCB8JBQ5sdHctZm9udC1sYXJnZR8EBQUxLzE3NB8GAgIfAmdkZAIPDxYCHwJoFgICAQ8PFgQfBAUGMCBMQVBTHwJoZGQCEQ9kFgICAQ8PFgIfBAUIMDE6MTU6NDJkZAITDxYCHwJoFgICAQ8PFgQfBAUGMCBMQVBTHwJoZGQCFQ8PFgIfBAUIMDE6MTU6NDJkZAIDDxYCHwJnFhICAQ8PFgIfBAUITmV0IFRpbWVkZAIDDw8WBB8EBQdPVkVSQUxMHwJnZGQCBQ8PFggfCQUObHR3LWZvbnQtbGFyZ2UfBAUFMS8yMjkfBgICHwJnZGQCBw8PFgQfBAUIQ0FURUdPUlkfAmdkZAIJDw8WCB8JBQ5sdHctZm9udC1sYXJnZR8EBQUxLzE3Mx8GAgIfAmdkZAILDw8WBB8EBQZHRU5ERVIfAmdkZAINDw8WCB8JBQ5sdHctZm9udC1sYXJnZR8EBQUxLzE3NB8GAgIfAmdkZAIPDw8WAh8EBQgwMToxNTozOGRkAhEPDxYCHwQFCDAxOjE1OjM4ZGQCBQ8WAh8CaGQCBw8WBB4JaW5uZXJodG1sBfcVPGRpdiBjbGFzcz0icm93Ij4gICAgPGRpdiBjbGFzcz0iY29sLTEyIGx0dy1kaXYtYmRyLWJvdCBsdHctbGVnLXRpdGxlLXBhZCI+ICAgICAgICAgICA8c3BhbiBDbGFzcyA9ICJoNSAiID5MRUdTPC9zcGFuPiAgIDwvZGl2PiAgIDxkaXYgY2xhc3M9ImNvbC04IGNvbC1zbS00Ij4gICAgICAgPGRpdj4gICAgICAgIDwvZGl2PiAgIDwvZGl2PiAgIDxkaXYgY2xhc3M9ImNvbC0yIGQtbm9uZSBkLXNtLWJsb2NrIj4gICAgICAgPGRpdj4gICAgICAgICAgIDxzcGFuIENsYXNzID0gImx0dy1mb250LXhzbWFsbCBsdHctZGl2LWJkci1ib3QiID5PVkVSQUxMPC9zcGFuPiAgICAgICA8L2Rpdj4gICA8L2Rpdj4gICA8ZGl2IGNsYXNzPSJjb2wtMiI+ICAgICAgIDxkaXY+ICAgICAgICAgICA8c3BhbiBDbGFzcyA9ICJsdHctZm9udC14c21hbGwgbHR3LWRpdi1iZHItYm90IiA+Q0FURUdPUlk8L3NwYW4+ICAgICAgIDwvZGl2PiAgIDwvZGl2PiAgIDxkaXYgY2xhc3M9ImNvbC0yIGQtbm9uZSBkLXNtLWJsb2NrIj4gICAgICAgPGRpdj4gICAgICAgICAgIDxzcGFuIENsYXNzID0gImx0dy1mb250LXhzbWFsbCBsdHctZGl2LWJkci1ib3QiPkdFTkRFUjwvc3Bhbj4gICAgICAgPC9kaXY+ICAgPC9kaXY+ICAgPGRpdiBjbGFzcz0iY29sLTIiPiAgICAgICA8ZGl2PiAgICAgICAgICAgPHNwYW4gQ2xhc3MgPSAibHR3LWZvbnQteHNtYWxsIGx0dy1kaXYtYmRyLWJvdCIgPlRJTUU8L3NwYW4+ICAgICAgIDwvZGl2PiAgIDwvZGl2PjxkaXYgY2xhc3M9ImNvbC04IGNvbC1zbS00IHRleHQtbGVmdCBteS1hdXRvIGx0dy1sZWdzLXBhZCI+ICAgICAgICA8c3BhbiBjbGFzcyA9ICJoNiI+S00gNCw1PC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgZC1ub25lIGQtc20tYmxvY2sgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4+Mzwvc3Bhbj48YnIvPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC0yIHRleHQtY2VudGVyIG15LWF1dG8gbHR3LWxlZ3MtcGFkIj4gICAgICAgIDxzcGFuPiAzPC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgZC1ub25lIGQtc20tYmxvY2sgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4+Mzwvc3Bhbj48YnIvPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC0yIHRleHQtY2VudGVyIG15LWF1dG8gbHR3LWxlZ3MtcGFkIj4gICAgICAgIDxzcGFuIGNsYXNzPSJsdHctbnVtLWxlZyI+MDA6MTU6MTc8L3NwYW4+PGJyLz48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtOCBjb2wtc20tNCB0ZXh0LWxlZnQgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4gY2xhc3MgPSAiaDYiPktNIDEwLDU8L3NwYW4+PGJyLz48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtMiBkLW5vbmUgZC1zbS1ibG9jayB0ZXh0LWNlbnRlciBteS1hdXRvIGx0dy1sZWdzLXBhZCI+ICAgICAgICA8c3Bhbj4yPC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4+IDI8L3NwYW4+PGJyLz48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtMiBkLW5vbmUgZC1zbS1ibG9jayB0ZXh0LWNlbnRlciBteS1hdXRvIGx0dy1sZWdzLXBhZCI+ICAgICAgICA8c3Bhbj4yPC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4gY2xhc3M9Imx0dy1udW0tbGVnIj4wMDoyMjowNzwvc3Bhbj48YnIvPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC04IGNvbC1zbS00IHRleHQtbGVmdCBteS1hdXRvIGx0dy1sZWdzLXBhZCI+ICAgICAgICA8c3BhbiBjbGFzcyA9ICJoNiI+S00gMTU8L3NwYW4+PGJyLz48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtMiBkLW5vbmUgZC1zbS1ibG9jayB0ZXh0LWNlbnRlciBteS1hdXRvIGx0dy1sZWdzLXBhZCI+ICAgICAgICA8c3Bhbj4xPC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4+IDE8L3NwYW4+PGJyLz48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtMiBkLW5vbmUgZC1zbS1ibG9jayB0ZXh0LWNlbnRlciBteS1hdXRvIGx0dy1sZWdzLXBhZCI+ICAgICAgICA8c3Bhbj4xPC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4gY2xhc3M9Imx0dy1udW0tbGVnIj4wMDoxNToyNTwvc3Bhbj48YnIvPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC04IGNvbC1zbS00IHRleHQtbGVmdCBteS1hdXRvIGx0dy1sZWdzLXBhZCI+ICAgICAgICA8c3BhbiBjbGFzcyA9ICJoNiI+RmluaXNoPC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgZC1ub25lIGQtc20tYmxvY2sgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4+MTwvc3Bhbj48YnIvPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC0yIHRleHQtY2VudGVyIG15LWF1dG8gbHR3LWxlZ3MtcGFkIj4gICAgICAgIDxzcGFuPiAxPC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgZC1ub25lIGQtc20tYmxvY2sgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4+MTwvc3Bhbj48YnIvPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC0yIHRleHQtY2VudGVyIG15LWF1dG8gbHR3LWxlZ3MtcGFkIj4gICAgICAgIDxzcGFuIGNsYXNzPSJsdHctbnVtLWxlZyI+MDA6MjI6NTE8L3NwYW4+PGJyLz48L2Rpdj48L2Rpdj4fAmdkAgkPFgIfAmhkAgUPFgIfAmhkAgcPFgIfAmhkAgkPZBYCAgEPFgIfAmhkAgsPDxYCHwQFI1JvdGF0ZSB5b3VyIGRldmljZSB0byBzZWUgbW9yZSBkYXRhZGQCDQ8WAh8CZxYCAgEPDxYCHwQFCkFsbCBTcGxpdHNkZAIPDxYCHwJoZAIRDw8WAh8CaGRkAgcPZBYEAgEPFgIfAmhkAgMPDxYGHwoFNmh0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L3Jlc3VsdHMvdG1yLzE2NjQ4X1RpbWVyLnBuZx8IBQEjHwJoZGQCCQ8WAh8CaBYCAgEPDxYCHwoFJmh0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L1JhY2VUZWMucG5nZGRkLiSvKKsKby0qcDR8old5pZ/1rZo=">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg1ODE2NjI3MQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmDw8WAh4LTXlQYWdlVGl0bGUFDVRpbW90aW9uIDIwMTdkFgICAQ9kFgwCAQ8WAh4HVmlzaWJsZWhkAgMPFgIfAmhkAgUPZBYMAgEPFgIeBXN0eWxlBRliYWNrZ3JvdW5kLWNvbG9yOiMwNzY5QUQ7FgQCAQ8PFgYeBFRleHQFDVRpbW90aW9uIDIwMTceCUZvcmVDb2xvcgn/////HgRfIVNCAgRkZAIDDw8WBh8EBQsyMyBBcHIgMjAxNx8FCf////8fBgIEZGQCAw8WBB4FY2xhc3MFRG5hdmJhciBuYXZiYXItdGhpbiBuYXZiYXItZGFyayBuYXZiYXItZXhwYW5kLW1kIG5hdmJhci10b2dnbGVhYmxlLW1kHwMFNnBhZGRpbmc6MC4ycmVtO2JhY2tncm91bmQtY29sb3I6IzA3NjlBRDtjb2xvcjojRkZGRkZGOxYWAgMPDxYGHwUJ/////x8GAgQfAmhkZAIFDxYCHwcFGW5hdi1pdGVtIGZvbnQtd2VpZ2h0LWJvbGQWAgIBDw8WCB8EBQdSZXN1bHRzHwUJ/////x4LTmF2aWdhdGVVcmwFJn4vUmVzdWx0cy5hc3B4P0NJZD0xNjY0OCZSSWQ9MTE2JkVJZD0xHwYCBGRkAgcPZBYCAgEPDxYGHwUJ/////x8GAgQfAmhkZAIJD2QWAgIBDw8WBh8FCf////8fBgIEHwJoZGQCCw9kFgICAQ8PFgYfBQn/////HwYCBB8CaGRkAg0PZBYCAgEPDxYIHwQFB0RldGFpbHMfBQn/////HwgFHn4vU3RhdHMuYXNweD9DSWQ9MTY2NDgmUklkPTExNh8GAgRkZAIPD2QWAgIBDw8WBh8FCf////8fBgIEHwJoZGQCEQ8WAh8CaBYCAgEPFgIfAwUOY29sb3I6I0ZGRkZGRjsWAgIBDw8WBh8EBQVMaW5rcx8FCf////8fBgIEZGQCEw9kFgICAQ8PFgQfBQn/////HwYCBGRkAhUPFgIfAmgWAgIBDw8WBB8FCf////8fBgIEZGQCFw9kFgICAQ8PFggfBQn/////HwgFASMfBAUkPGkgY2xhc3M9ImZhcyBmYS1ob21lIj4mbmJzcDwvaT5Ib21lHwYCBGRkAgUPFgQfAwU5cGFkZGluZy1sZWZ0OjEwcHg7YmFja2dyb3VuZC1jb2xvcjojMDc2OUFEO2NvbG9yOiNGRkZGRkY7HwJoZAIJDxYCHwJoZAILDxYCHwJoZAINDxYEHwcFImQtZmxleCBqdXN0aWZ5LWNvbnRlbnQtY2VudGVyIHBiLTEfAwUjYmFja2dyb3VuZC1jb2xvcjojO292ZXJmbG93OmhpZGRlbjsWBAIBDxYCHwcFEWQtbm9uZSBkLXNtLWJsb2NrFgQCAQ9kFgJmDw8WBh4IQ3NzQ2xhc3MFCWltZy1mbHVpZB4ISW1hZ2VVcmwFGn4vSW1hZ2VzL0NsaWVudHMvMTY2NDgucG5nHwYCAmRkAgMPDxYIHwkFEmQtbm9uZSBkLW1kLWlubGluZR8KBTZodHRwczovL2ltYWdlcy5yYWNldGVjLm5ldC9yZXN1bHRzL3Rtci8xNjY0OF9UaW1lci5wbmcfCAUBIx8GAgJkZAIDD2QWBAIBD2QWAmYPDxYGHwkFD2ltZy1mbHVpZCB3LTEwMB8KBRp+L0ltYWdlcy9DbGllbnRzLzE2NjQ4LnBuZx8GAgJkZAIDDw8WBB8KBTZodHRwczovL2ltYWdlcy5yYWNldGVjLm5ldC9yZXN1bHRzL3Rtci8xNjY0OF9UaW1lci5wbmcfCAUBI2RkAgcPZBYQAgEPFgIfAmcWDgIBDw8WAh8EBQxBbGluIEJ1Z2FyaSBkZAIDDxYCHwJoZAIFDxYCHwMFGWJhY2tncm91bmQtY29sb3I6IzA3NjlBRDsWAgIBDw8WBh8EBQEyHwUJ/////x8GAgRkZAIHD2QWAgIBDw8WAh8EBQtTZW1pbWFyYXRvbmRkAgkPZBYCAgEPDxYEHwkFcnRhYmxlIHRhYmxlLWJvcmRlcmxlc3MgdGFibGUtc20gdGFibGUtaG92ZXIgc21hbGwgYWxpZ24tbWlkZGxlIGx0dy1jZWxsLWNlbnRlciBsdHctbWFyZ2luLWJvdHRvbS0wIGx0dy10YWJsZS1maXhlZB8GAgJkZAILDxYCHwMFGWJhY2tncm91bmQtY29sb3I6IzA3NjlBRDsWAgIBDw8WBh8FCf////8fCAU5aHR0cHM6Ly9yZXN1bHRzLmZpbmlzaHRpbWUuY28uemEvQ29tcmFkZXNBdGhsZXRlLmFzcHg/aWQ9HwYCBGRkAg0PFgIfAmhkAgMPFgIfAmcWCgIBDxYCHwJoFhgCAQ8PFgIfBAULRmluaXNoIFRpbWVkZAIDDxYCHwJoZAIFDw8WBB8EBQdPVkVSQUxMHwJoZGQCBw8PFggfCQUObHR3LWZvbnQtbGFyZ2UfBAUFMS8yMjkfBgICHwJnZGQCCQ8PFgQfBAUIQ0FURUdPUlkfAmhkZAILDw8WCB8JBQ5sdHctZm9udC1sYXJnZR8EBQUxLzE3Mx8GAgIfAmdkZAINDw8WBB8EBQZHRU5ERVIfAmhkZAIPDw8WCB8JBQ5sdHctZm9udC1sYXJnZR8EBQUxLzE3NB8GAgIfAmdkZAIRDxYCHwJoFgICAQ8PFgQfBAUGMCBMQVBTHwJoZGQCEw9kFgICAQ8PFgIfBAUIMDE6MTU6NDJkZAIVDxYCHwJoFgICAQ8PFgQfBAUGMCBMQVBTHwJoZGQCFw8PFgIfBAUIMDE6MTU6NDJkZAIDDxYCHwJnFhQCAQ8WAh8CaGQCAw8PFgIfBAUITmV0IFRpbWVkZAIHDw8WBB8EBQdPVkVSQUxMHwJnZGQCCQ8PFggfCQUObHR3LWZvbnQtbGFyZ2UfBAUFMS8yMjkfBgICHwJnZGQCCw8PFgQfBAUIQ0FURUdPUlkfAmdkZAINDw8WCB8JBQ5sdHctZm9udC1sYXJnZR8EBQUxLzE3Mx8GAgIfAmdkZAIPDw8WBB8EBQZHRU5ERVIfAmdkZAIRDw8WCB8JBQ5sdHctZm9udC1sYXJnZR8EBQUxLzE3NB8GAgIfAmdkZAITDw8WAh8EBQgwMToxNTozOGRkAhUPDxYCHwQFCDAxOjE1OjM4ZGQCBQ8WAh8CaGQCBw8WBB4JaW5uZXJodG1sBfcVPGRpdiBjbGFzcz0icm93Ij4gICAgPGRpdiBjbGFzcz0iY29sLTEyIGx0dy1kaXYtYmRyLWJvdCBsdHctbGVnLXRpdGxlLXBhZCI+ICAgICAgICAgICA8c3BhbiBDbGFzcyA9ICJoNSAiID5MRUdTPC9zcGFuPiAgIDwvZGl2PiAgIDxkaXYgY2xhc3M9ImNvbC04IGNvbC1zbS00Ij4gICAgICAgPGRpdj4gICAgICAgIDwvZGl2PiAgIDwvZGl2PiAgIDxkaXYgY2xhc3M9ImNvbC0yIGQtbm9uZSBkLXNtLWJsb2NrIj4gICAgICAgPGRpdj4gICAgICAgICAgIDxzcGFuIENsYXNzID0gImx0dy1mb250LXhzbWFsbCBsdHctZGl2LWJkci1ib3QiID5PVkVSQUxMPC9zcGFuPiAgICAgICA8L2Rpdj4gICA8L2Rpdj4gICA8ZGl2IGNsYXNzPSJjb2wtMiI+ICAgICAgIDxkaXY+ICAgICAgICAgICA8c3BhbiBDbGFzcyA9ICJsdHctZm9udC14c21hbGwgbHR3LWRpdi1iZHItYm90IiA+Q0FURUdPUlk8L3NwYW4+ICAgICAgIDwvZGl2PiAgIDwvZGl2PiAgIDxkaXYgY2xhc3M9ImNvbC0yIGQtbm9uZSBkLXNtLWJsb2NrIj4gICAgICAgPGRpdj4gICAgICAgICAgIDxzcGFuIENsYXNzID0gImx0dy1mb250LXhzbWFsbCBsdHctZGl2LWJkci1ib3QiPkdFTkRFUjwvc3Bhbj4gICAgICAgPC9kaXY+ICAgPC9kaXY+ICAgPGRpdiBjbGFzcz0iY29sLTIiPiAgICAgICA8ZGl2PiAgICAgICAgICAgPHNwYW4gQ2xhc3MgPSAibHR3LWZvbnQteHNtYWxsIGx0dy1kaXYtYmRyLWJvdCIgPlRJTUU8L3NwYW4+ICAgICAgIDwvZGl2PiAgIDwvZGl2PjxkaXYgY2xhc3M9ImNvbC04IGNvbC1zbS00IHRleHQtbGVmdCBteS1hdXRvIGx0dy1sZWdzLXBhZCI+ICAgICAgICA8c3BhbiBjbGFzcyA9ICJoNiI+S00gNCw1PC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgZC1ub25lIGQtc20tYmxvY2sgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4+Mzwvc3Bhbj48YnIvPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC0yIHRleHQtY2VudGVyIG15LWF1dG8gbHR3LWxlZ3MtcGFkIj4gICAgICAgIDxzcGFuPiAzPC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgZC1ub25lIGQtc20tYmxvY2sgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4+Mzwvc3Bhbj48YnIvPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC0yIHRleHQtY2VudGVyIG15LWF1dG8gbHR3LWxlZ3MtcGFkIj4gICAgICAgIDxzcGFuIGNsYXNzPSJsdHctbnVtLWxlZyI+MDA6MTU6MTc8L3NwYW4+PGJyLz48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtOCBjb2wtc20tNCB0ZXh0LWxlZnQgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4gY2xhc3MgPSAiaDYiPktNIDEwLDU8L3NwYW4+PGJyLz48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtMiBkLW5vbmUgZC1zbS1ibG9jayB0ZXh0LWNlbnRlciBteS1hdXRvIGx0dy1sZWdzLXBhZCI+ICAgICAgICA8c3Bhbj4yPC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4+IDI8L3NwYW4+PGJyLz48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtMiBkLW5vbmUgZC1zbS1ibG9jayB0ZXh0LWNlbnRlciBteS1hdXRvIGx0dy1sZWdzLXBhZCI+ICAgICAgICA8c3Bhbj4yPC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4gY2xhc3M9Imx0dy1udW0tbGVnIj4wMDoyMjowNzwvc3Bhbj48YnIvPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC04IGNvbC1zbS00IHRleHQtbGVmdCBteS1hdXRvIGx0dy1sZWdzLXBhZCI+ICAgICAgICA8c3BhbiBjbGFzcyA9ICJoNiI+S00gMTU8L3NwYW4+PGJyLz48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtMiBkLW5vbmUgZC1zbS1ibG9jayB0ZXh0LWNlbnRlciBteS1hdXRvIGx0dy1sZWdzLXBhZCI+ICAgICAgICA8c3Bhbj4xPC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4+IDE8L3NwYW4+PGJyLz48L2Rpdj48ZGl2IGNsYXNzPSJjb2wtMiBkLW5vbmUgZC1zbS1ibG9jayB0ZXh0LWNlbnRlciBteS1hdXRvIGx0dy1sZWdzLXBhZCI+ICAgICAgICA8c3Bhbj4xPC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4gY2xhc3M9Imx0dy1udW0tbGVnIj4wMDoxNToyNTwvc3Bhbj48YnIvPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC04IGNvbC1zbS00IHRleHQtbGVmdCBteS1hdXRvIGx0dy1sZWdzLXBhZCI+ICAgICAgICA8c3BhbiBjbGFzcyA9ICJoNiI+RmluaXNoPC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgZC1ub25lIGQtc20tYmxvY2sgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4+MTwvc3Bhbj48YnIvPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC0yIHRleHQtY2VudGVyIG15LWF1dG8gbHR3LWxlZ3MtcGFkIj4gICAgICAgIDxzcGFuPiAxPC9zcGFuPjxici8+PC9kaXY+PGRpdiBjbGFzcz0iY29sLTIgZC1ub25lIGQtc20tYmxvY2sgdGV4dC1jZW50ZXIgbXktYXV0byBsdHctbGVncy1wYWQiPiAgICAgICAgPHNwYW4+MTwvc3Bhbj48YnIvPjwvZGl2PjxkaXYgY2xhc3M9ImNvbC0yIHRleHQtY2VudGVyIG15LWF1dG8gbHR3LWxlZ3MtcGFkIj4gICAgICAgIDxzcGFuIGNsYXNzPSJsdHctbnVtLWxlZyI+MDA6MjI6NTE8L3NwYW4+PGJyLz48L2Rpdj48L2Rpdj4fAmdkAgkPFgIfAmhkAgUPFgIfAmhkAgcPFgIfAmhkAgkPZBYCAgEPFgIfAmhkAgsPDxYCHwQFI1JvdGF0ZSB5b3VyIGRldmljZSB0byBzZWUgbW9yZSBkYXRhZGQCDQ8WAh8CZxYCAgEPDxYCHwQFCkFsbCBTcGxpdHNkZAIPDxYCHwJoZAIJD2QWAgIBDw8WBh8KBTZodHRwczovL2ltYWdlcy5yYWNldGVjLm5ldC9yZXN1bHRzL3Rtci8xNjY0OF9UaW1lci5wbmcfCAUBIx8CaGRkAgsPFgIfAmgWBAIBDw8WAh8KBSZodHRwczovL2ltYWdlcy5yYWNldGVjLm5ldC9SYWNlVGVjLnBuZ2RkAgMPDxYCHwQFCyZjb3B5OyAyMDI0ZGRk1MC0gvk3a9o+eErszXDm3hbEteY=">
 </div>
 
 <script type="text/javascript">
@@ -61,13 +61,14 @@ function __doPostBack(eventTarget, eventArgument) {
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EF87DEBB">
 </div>
-    <script type="text/javascript">
-        $(window).on('load', function () {
-            $('#ctl00_popup').modal('show');
-        });
-    </script>
+        <script type="text/javascript">
+            $(window).on('load', function () {
+                $('#ctl00_popup').modal('show');
+            });
+        </script>
 
 
+        
         
         <div id="ctl00_divAll">
             <div id="ctl00_divRaceName" class="d-flex justify-content-between" style="background-color:#0769AD;">
@@ -104,6 +105,7 @@ function __doPostBack(eventTarget, eventArgument) {
                             
                         </li>
                         
+                        
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         
@@ -128,16 +130,15 @@ function __doPostBack(eventTarget, eventArgument) {
                 </div>
             </div>
             
-            <div id="ctl00_divLogo" class="d-flex justify-content-center pb-1" align="center" style="background-color:#;">
-                <div class="row">
-                    <div id="ctl00_divLargeLogo" class="d-none d-sm-block">
-                        <a id="ctl00_hlLargeLogo" target="_blank"><img id="ctl00_imgLargeLogo" class="img-fluid" src="Images/Clients/16648.png" style="border-width:0px;"></a>
-                        <a id="ctl00_hlTimerImageTop" class="d-none d-md-inline" href="#"><img src="https://images.racetec.net/results/tmr/16648_Timer.png" alt="" style="border-width:0px;"></a>
-                    </div>
-                    <div id="ctl00_divSmallLogo" class="d-block d-sm-none">
-                        <a id="ctl00_hlSmallLogo" target="_blank"><img id="ctl00_imgSmallLogo" class="img-fluid w-100" src="Images/Clients/16648.png" style="border-width:0px;"></a>
-                        <a id="ctl00_hlSmallTimerImageTop" href="#"><img src="https://images.racetec.net/results/tmr/16648_Timer.png" alt="" style="border-width:0px;"></a>
-                    </div>
+            
+            <div id="ctl00_divLogo" align="center" class="d-flex justify-content-center pb-1" style="background-color:#;overflow:hidden;">
+                <div id="ctl00_divLargeLogo" class="d-none d-sm-block">
+                    <a id="ctl00_hlLargeLogo" target="_blank"><img id="ctl00_imgLargeLogo" class="img-fluid" src="Images/Clients/16648.png" style="border-width:0px;"></a>
+                    <a id="ctl00_hlTimerImageTop" class="d-none d-md-inline" href="#"><img src="https://images.racetec.net/results/tmr/16648_Timer.png" alt="" style="border-width:0px;"></a>
+                </div>
+                <div id="ctl00_divSmallLogo" class="d-block d-sm-none">
+                    <a id="ctl00_hlSmallLogo" target="_blank"><img id="ctl00_imgSmallLogo" class="img-fluid w-100" src="Images/Clients/16648.png" style="border-width:0px;"></a>
+                    <a id="ctl00_hlSmallTimerImageTop" href="#"><img src="https://images.racetec.net/results/tmr/16648_Timer.png" alt="" style="border-width:0px;"></a>
                 </div>
             </div>
         </div>
@@ -184,22 +185,21 @@ function __doPostBack(eventTarget, eventArgument) {
 </tbody></table>
                         </div>
                         
+
+                        
                     </div>
                 </div>
                 <div id="ctl00_Content_Main_divRight" class="col-12 col-lg-8">
                     <div class="ltw-raised-panel" align="center">
                         
                         <div id="ctl00_Content_Main_divTime2">
-                            <div>
-                                <br>
-                            </div>
-                            <div style="border-top-style: solid; border-top-width: thin; border-top-color: #999999">
-                                <br>
-                            </div>
+                            
                             <div class="row">
                                 <div class="col-7">
-                                    <div style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #CCCCCC">
+                                    <div>
                                         <span id="ctl00_Content_Main_lblTimeCaption2" class="h3">Net Time</span>
+                                    </div>
+                                    <div id="ctl00_Content_Main_divNetTimeDivider" style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #CCCCCC">
                                     </div>
                                     <div class="row">
                                         <div class="col-6 col-sm-4 ltw-padding-0">
@@ -244,6 +244,8 @@ function __doPostBack(eventTarget, eventArgument) {
                         <div id="ctl00_Content_Main_divLegs" class="ltw-raised-panel" align="center"><div class="row">    <div class="col-12 ltw-div-bdr-bot ltw-leg-title-pad">           <span class="h5 ">LEGS</span>   </div>   <div class="col-8 col-sm-4">       <div>        </div>   </div>   <div class="col-2 d-none d-sm-block">       <div>           <span class="ltw-font-xsmall ltw-div-bdr-bot">OVERALL</span>       </div>   </div>   <div class="col-2">       <div>           <span class="ltw-font-xsmall ltw-div-bdr-bot">CATEGORY</span>       </div>   </div>   <div class="col-2 d-none d-sm-block">       <div>           <span class="ltw-font-xsmall ltw-div-bdr-bot">GENDER</span>       </div>   </div>   <div class="col-2">       <div>           <span class="ltw-font-xsmall ltw-div-bdr-bot">TIME</span>       </div>   </div><div class="col-8 col-sm-4 text-left my-auto ltw-legs-pad">        <span class="h6">KM 4,5</span><br></div><div class="col-2 d-none d-sm-block text-center my-auto ltw-legs-pad">        <span>3</span><br></div><div class="col-2 text-center my-auto ltw-legs-pad">        <span> 3</span><br></div><div class="col-2 d-none d-sm-block text-center my-auto ltw-legs-pad">        <span>3</span><br></div><div class="col-2 text-center my-auto ltw-legs-pad">        <span class="ltw-num-leg">00:15:17</span><br></div><div class="col-8 col-sm-4 text-left my-auto ltw-legs-pad">        <span class="h6">KM 10,5</span><br></div><div class="col-2 d-none d-sm-block text-center my-auto ltw-legs-pad">        <span>2</span><br></div><div class="col-2 text-center my-auto ltw-legs-pad">        <span> 2</span><br></div><div class="col-2 d-none d-sm-block text-center my-auto ltw-legs-pad">        <span>2</span><br></div><div class="col-2 text-center my-auto ltw-legs-pad">        <span class="ltw-num-leg">00:22:07</span><br></div><div class="col-8 col-sm-4 text-left my-auto ltw-legs-pad">        <span class="h6">KM 15</span><br></div><div class="col-2 d-none d-sm-block text-center my-auto ltw-legs-pad">        <span>1</span><br></div><div class="col-2 text-center my-auto ltw-legs-pad">        <span> 1</span><br></div><div class="col-2 d-none d-sm-block text-center my-auto ltw-legs-pad">        <span>1</span><br></div><div class="col-2 text-center my-auto ltw-legs-pad">        <span class="ltw-num-leg">00:15:25</span><br></div><div class="col-8 col-sm-4 text-left my-auto ltw-legs-pad">        <span class="h6">Finish</span><br></div><div class="col-2 d-none d-sm-block text-center my-auto ltw-legs-pad">        <span>1</span><br></div><div class="col-2 text-center my-auto ltw-legs-pad">        <span> 1</span><br></div><div class="col-2 d-none d-sm-block text-center my-auto ltw-legs-pad">        <span>1</span><br></div><div class="col-2 text-center my-auto ltw-legs-pad">        <span class="ltw-num-leg">00:22:51</span><br></div></div></div>
                         
                     </div>
+                    <div id="ctl00_Content_Main_divTracker" class="row d-flex justify-content-center pb-1 pt-1">
+                    </div>
                 </div>
 
             </div>
@@ -264,9 +266,9 @@ function __doPostBack(eventTarget, eventArgument) {
                         </div>
                         <div>
                             <div id="ctl00_Content_Main_divSplitGrid" align="center">
-                            <table class="table table-bordered table-striped table-sm small" border="0">
+                            <table class="table table-bordered table-sm small" border="0">
 	<tbody><tr style="background-color:#0769AD;">
-		<th class="ltw-cell-center ltw-cell-left " style="color:#FFFFFF;width:100%;">Name</th><th class="ltw-cell-center " style="color:#FFFFFF;width:100%;">Time</th><th class="ltw-cell-center " style="color:#FFFFFF;width:100%;">Leg Time</th>
+		<td class="ltw-cell-center ltw-cell-left " style="color:#FFFFFF;width:100%;">Name</td><td class="ltw-cell-center " style="color:#FFFFFF;width:100%;">Time</td><td class="ltw-cell-center " style="color:#FFFFFF;width:100%;">Leg Time</td>
 	</tr><tr>
 		<td class="ltw-cell-padless ltw-cell-left " style="font-weight:bold;">KM 4,5</td><td class="ltw-cell-padless ltw-cell-center" style="font-weight:normal;">00:15:17</td><td class="ltw-cell-padless ltw-cell-center" style="font-weight:normal;">00:15:17</td>
 	</tr><tr>
@@ -287,17 +289,9 @@ function __doPostBack(eventTarget, eventArgument) {
         </div>
     </div>
 
-    <br>
-    <div align="center">
-        
-    </div>
-
         </div>
         <br>
         <div id="ctl00_divFooter" class="container">
-            <div class="d-flex justify-content-center hidden-xs">
-                
-            </div>
             <div class="d-flex justify-content-center pb-3">
                 
                 <a id="ctl00_hlSB1"></a>

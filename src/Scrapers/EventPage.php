@@ -75,7 +75,7 @@ class EventPage extends AbstractScraper
      */
     public function getCrawlerUri()
     {
-        return $this->getCrawlerUriHost().'/Results.aspx?'
+        return $this->getCrawlerUriHost().'/results.aspx?'
                . 'CId=' . $this->getCId()
                . '&RId=' . $this->getRId()
                . '&EId=' . $this->getEId();

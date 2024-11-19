@@ -158,8 +158,10 @@ class ResultPage extends AbstractParser
             foreach ($splitRows as $resultRow) {
                 if ($this->isSplitHeaderRow($resultRow)) {
                     $headerData = $this->parseSplitsHeader($resultRow);
+//                    var_dump($headerData);
                 } else {
                     $split = $this->parseSplitRow($resultRow, $headerData);
+//                    var_dump($split);
                     if ($split) {
                         $return[] = $split;
                     }
@@ -190,7 +192,14 @@ class ResultPage extends AbstractParser
                 return false;
             }
         }
-        return false;
+        $hasAllColumns = true;
+        foreach (['Name','Time'] as $find) {
+            if (strpos($value, $find) === false) {
+                $hasAllColumns = false;
+                break;
+            }
+        }
+        return $hasAllColumns;
     }
 
     /**

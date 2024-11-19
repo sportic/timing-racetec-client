@@ -2,11 +2,11 @@
 	Crosul UpDown Run
 </title><meta http-equiv="X-UA-Compatible" content="IE=edge">
 <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/css/bootstrap.min.css"><link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.1/css/all.css" integrity="sha384-O8whS3fhG2OnA5Kas0Y9l3cfpmYjapjI0E4theH4iuMD+pLhbf6JI0jIMfYcK3yZ" crossorigin="anonymous"><link href="/css/rtv2_v2.css" rel="stylesheet" type="text/css"><link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
-    <script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-6F4SKJ6H66&amp;l=dataLayer&amp;cx=c"></script><script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
     <script src="js/ltw.js" type="text/javascript"></script>
+    <script src="js/clocks.js" type="text/javascript"></script>
     <script src="css/jquery.min.js" type="text/javascript"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.2/js/bootstrap.min.js" integrity="sha384-o+RDsa0aLu++PJvFqy8fFScvbHFLtbvScb8AjopnFD+iEQ7wo/CG0xlczd+2O/em" crossorigin="anonymous"></script>
     
@@ -35,7 +35,7 @@
 <input type="hidden" name="__EVENTTARGET" id="__EVENTTARGET" value="">
 <input type="hidden" name="__EVENTARGUMENT" id="__EVENTARGUMENT" value="">
 <input type="hidden" name="__LASTFOCUS" id="__LASTFOCUS" value="">
-<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwULLTExMDE2NTQ4OTcPFgIeE1ZhbGlkYXRlUmVxdWVzdE1vZGUCARYCZg8PFgIeC015UGFnZVRpdGxlBRFDcm9zdWwgVXBEb3duIFJ1bmQWAgIBD2QWCgIBDxYCHgdWaXNpYmxlaGQCAw9kFgoCAQ8WAh4Fc3R5bGUFGWJhY2tncm91bmQtY29sb3I6IzA3NjlBRDsWBAIBDw8WBh4EVGV4dAURQ3Jvc3VsIFVwRG93biBSdW4eCUZvcmVDb2xvcgn/////HgRfIVNCAgRkZAIDDw8WBh8EBQo4IEp1bCAyMDE3HwUJ/////x8GAgRkZAIDDxYEHgVjbGFzcwVEbmF2YmFyIG5hdmJhci10aGluIG5hdmJhci1kYXJrIG5hdmJhci1leHBhbmQtbWQgbmF2YmFyLXRvZ2dsZWFibGUtbWQfAwU2cGFkZGluZzowLjJyZW07YmFja2dyb3VuZC1jb2xvcjojMDc2OUFEO2NvbG9yOiNGRkZGRkY7FhQCAw8PFgYfBQn/////HwYCBB8CaGRkAgUPFgIfBwUZbmF2LWl0ZW0gZm9udC13ZWlnaHQtYm9sZBYCAgEPDxYIHwQFB1Jlc3VsdHMfBQn/////HgtOYXZpZ2F0ZVVybAUmfi9SZXN1bHRzLmFzcHg/Q0lkPTE2NjQ4JlJJZD0xMzQmRUlkPTIfBgIEZGQCBw9kFgICAQ8PFgYfBQn/////HwYCBB8CaGRkAgkPZBYCAgEPDxYGHwUJ/////x8GAgQfAmhkZAILD2QWAgIBDw8WBh8FCf////8fBgIEHwJoZGQCDQ9kFgICAQ8PFggfBAUHRGV0YWlscx8FCf////8fCAUefi9TdGF0cy5hc3B4P0NJZD0xNjY0OCZSSWQ9MTM0HwYCBGRkAg8PZBYCAgEPDxYGHwUJ/////x8GAgQfAmhkZAIRDxYCHwJoFgICAQ8WAh8DBQ5jb2xvcjojRkZGRkZGOxYCAgEPDxYGHwQFBUxpbmtzHwUJ/////x8GAgRkZAITDxYCHwJoFgICAQ8PFgQfBQn/////HwYCBGRkAhUPZBYCAgEPDxYIHwUJ/////x8IBQEjHwQFJDxpIGNsYXNzPSJmYXMgZmEtaG9tZSI+Jm5ic3A8L2k+SG9tZR8GAgRkZAIFDxYEHwMFOXBhZGRpbmctbGVmdDoxMHB4O2JhY2tncm91bmQtY29sb3I6IzA3NjlBRDtjb2xvcjojRkZGRkZGOx8CaGQCCQ8WAh8CaGQCCw8WAh8DBRNiYWNrZ3JvdW5kLWNvbG9yOiM7FgQCAQ9kFgQCAQ9kFgJmDw8WBh4IQ3NzQ2xhc3MFCWltZy1mbHVpZB4ISW1hZ2VVcmwFP2h0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L3Jlc3VsdHMvcmFjZWxvZ28vMTY2NDgvMTY2NDhfMTM0LnBuZx8GAgJkZAIDDw8WCB8JBRJkLW5vbmUgZC1tZC1pbmxpbmUfCgU2aHR0cHM6Ly9pbWFnZXMucmFjZXRlYy5uZXQvcmVzdWx0cy90bXIvMTY2NDhfVGltZXIucG5nHwgFASMfBgICZGQCAw9kFgQCAQ9kFgJmDw8WBh8JBQ9pbWctZmx1aWQgdy0xMDAfCgU/aHR0cHM6Ly9pbWFnZXMucmFjZXRlYy5uZXQvcmVzdWx0cy9yYWNlbG9nby8xNjY0OC8xNjY0OF8xMzQucG5nHwYCAmRkAgMPDxYEHwoFNmh0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L3Jlc3VsdHMvdG1yLzE2NjQ4X1RpbWVyLnBuZx8IBQEjZGQCBQ9kFhICAQ8WAh8CZxYMAgEPDxYCHwQFFFJvYmVydCBFZHVhcmQgUGV0ZXIgZGQCAw8WAh8CaGQCBQ8WAh8DBRliYWNrZ3JvdW5kLWNvbG9yOiMwNzY5QUQ7FgICAQ8PFgYfBAUDNTA0HwUJ/////x8GAgRkZAIHD2QWAgIBDw8WAh8EBQQ3IGttZGQCCQ9kFgICAQ8PFgQfCQVydGFibGUgdGFibGUtYm9yZGVybGVzcyB0YWJsZS1zbSB0YWJsZS1ob3ZlciBzbWFsbCBhbGlnbi1taWRkbGUgbHR3LWNlbGwtY2VudGVyIGx0dy1tYXJnaW4tYm90dG9tLTAgbHR3LXRhYmxlLWZpeGVkHwYCAmRkAgsPFgIfAmhkAgMPFgIfAmcWCgIBDxYCHwJnFhYCAQ8PFgIfBAULRmluaXNoIFRpbWVkZAIDDw8WBB8EBQdPVkVSQUxMHwJnZGQCBQ8PFggfCQUObHR3LWZvbnQtbGFyZ2UfBAUEMi81MB8GAgIfAmdkZAIHDw8WBB8EBQhDQVRFR09SWR8CZ2RkAgkPDxYIHwkFDmx0dy1mb250LWxhcmdlHwQFAzEvMh8GAgIfAmdkZAILDw8WBB8EBQZHRU5ERVIfAmdkZAINDw8WCB8JBQ5sdHctZm9udC1sYXJnZR8EBQQyLzI1HwYCAh8CZ2RkAg8PFgIfAmgWAgIBDw8WBB8EBQYwIExBUFMfAmhkZAIRD2QWAgIBDw8WAh8EBQgwMDo0NDozMWRkAhMPFgIfAmgWAgIBDw8WBB8EBQYwIExBUFMfAmhkZAIVDw8WAh8EBQgwMDo0NDozMWRkAgMPFgIfAmgWEgIBDw8WAh8EBQhOZXQgVGltZWRkAgMPDxYCHwJoZGQCBQ8PFgYfCQUObHR3LWZvbnQtbGFyZ2UfBgICHwJoZGQCBw8PFgIfAmhkZAIJDw8WBh8JBQ5sdHctZm9udC1sYXJnZR8GAgIfAmhkZAILDw8WAh8CaGRkAg0PDxYGHwkFDmx0dy1mb250LWxhcmdlHwYCAh8CaGRkAg8PDxYCHwQFCDAwOjAwOjAwZGQCEQ8PFgIfBAUIMDA6MDA6MDBkZAIFDxYCHwJoZAIHDxYCHwJoZAIJDxYCHwJnFgICAQ8WAh4JaW5uZXJodG1sBYgCPGRpdiBjbGFzcz0iZC1mbGV4IGZsZXgtd3JhcCBqdXN0aWZ5LWNvbnRlbnQtY2VudGVyIGx0dy1zaGFyZS1wYWQiPjxkaXY+PGkgY2xhc3M9ImZhIGZhLXByaW50IiBzdHlsZT0idmVydGljYWwtYWxpZ246IG1pZGRsZTsgY29sb3I6ICMwMDdiZmYiPjwvaT48YSBjbGFzcz0ibHR3LXNoYXJlLXBhZCIgIHN0eWxlID0iY29sb3I6ICMwMDAiIGhyZWY9ImNlcnQuYXNweD91aWQ9MTY2NDgtMTM0LTItODUzMyI+UHJpbnQgQ2VydGlmaWNhdGU8L2E+PC9kaXY+PC9kaXY+ZAIFDxYCHwJoZAIHDxYCHwJoZAIJD2QWAgIBDxYCHwJoZAILDw8WAh8EBSNSb3RhdGUgeW91ciBkZXZpY2UgdG8gc2VlIG1vcmUgZGF0YWRkAg0PFgIfAmgWAgIBDw8WAh8EBQpBbGwgU3BsaXRzZGQCDw8WAh8CaGQCEQ8PFgIfAmhkZAIHD2QWBAIBDxYCHwJoZAIDDw8WBh8KBTZodHRwczovL2ltYWdlcy5yYWNldGVjLm5ldC9yZXN1bHRzL3Rtci8xNjY0OF9UaW1lci5wbmcfCAUBIx8CaGRkAgkPFgIfAmgWAgIBDw8WAh8KBSZodHRwczovL2ltYWdlcy5yYWNldGVjLm5ldC9SYWNlVGVjLnBuZ2RkZIFfyQrQzSFlvcUIMnup3ywR0872">
+<input type="hidden" name="__VIEWSTATE" id="__VIEWSTATE" value="/wEPDwUKMTg1ODE2NjI3MQ8WAh4TVmFsaWRhdGVSZXF1ZXN0TW9kZQIBFgJmDw8WAh4LTXlQYWdlVGl0bGUFEUNyb3N1bCBVcERvd24gUnVuZBYCAgEPZBYMAgEPFgIeB1Zpc2libGVoZAIDDxYCHwJoZAIFD2QWDAIBDxYCHgVzdHlsZQUZYmFja2dyb3VuZC1jb2xvcjojMDc2OUFEOxYEAgEPDxYGHgRUZXh0BRFDcm9zdWwgVXBEb3duIFJ1bh4JRm9yZUNvbG9yCf////8eBF8hU0ICBGRkAgMPDxYGHwQFCjggSnVsIDIwMTcfBQn/////HwYCBGRkAgMPFgQeBWNsYXNzBURuYXZiYXIgbmF2YmFyLXRoaW4gbmF2YmFyLWRhcmsgbmF2YmFyLWV4cGFuZC1tZCBuYXZiYXItdG9nZ2xlYWJsZS1tZB8DBTZwYWRkaW5nOjAuMnJlbTtiYWNrZ3JvdW5kLWNvbG9yOiMwNzY5QUQ7Y29sb3I6I0ZGRkZGRjsWFgIDDw8WBh8FCf////8fBgIEHwJoZGQCBQ8WAh8HBRluYXYtaXRlbSBmb250LXdlaWdodC1ib2xkFgICAQ8PFggfBAUHUmVzdWx0cx8FCf////8eC05hdmlnYXRlVXJsBSZ+L1Jlc3VsdHMuYXNweD9DSWQ9MTY2NDgmUklkPTEzNCZFSWQ9Mh8GAgRkZAIHD2QWAgIBDw8WBh8FCf////8fBgIEHwJoZGQCCQ9kFgICAQ8PFgYfBQn/////HwYCBB8CaGRkAgsPZBYCAgEPDxYGHwUJ/////x8GAgQfAmhkZAIND2QWAgIBDw8WCB8EBQdEZXRhaWxzHwUJ/////x8IBR5+L1N0YXRzLmFzcHg/Q0lkPTE2NjQ4JlJJZD0xMzQfBgIEZGQCDw9kFgICAQ8PFgYfBQn/////HwYCBB8CaGRkAhEPFgIfAmgWAgIBDxYCHwMFDmNvbG9yOiNGRkZGRkY7FgICAQ8PFgYfBAUFTGlua3MfBQn/////HwYCBGRkAhMPZBYCAgEPDxYEHwUJ/////x8GAgRkZAIVDxYCHwJoFgICAQ8PFgQfBQn/////HwYCBGRkAhcPZBYCAgEPDxYIHwUJ/////x8IBQEjHwQFJDxpIGNsYXNzPSJmYXMgZmEtaG9tZSI+Jm5ic3A8L2k+SG9tZR8GAgRkZAIFDxYEHwMFOXBhZGRpbmctbGVmdDoxMHB4O2JhY2tncm91bmQtY29sb3I6IzA3NjlBRDtjb2xvcjojRkZGRkZGOx8CaGQCCQ8WAh8CaGQCCw8WAh8CaGQCDQ8WBB8HBSJkLWZsZXgganVzdGlmeS1jb250ZW50LWNlbnRlciBwYi0xHwMFI2JhY2tncm91bmQtY29sb3I6IztvdmVyZmxvdzpoaWRkZW47FgQCAQ8WAh8HBRFkLW5vbmUgZC1zbS1ibG9jaxYEAgEPZBYCZg8PFgYeCENzc0NsYXNzBQlpbWctZmx1aWQeCEltYWdlVXJsBT9odHRwczovL2ltYWdlcy5yYWNldGVjLm5ldC9yZXN1bHRzL3JhY2Vsb2dvLzE2NjQ4LzE2NjQ4XzEzNC5wbmcfBgICZGQCAw8PFggfCQUSZC1ub25lIGQtbWQtaW5saW5lHwoFNmh0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L3Jlc3VsdHMvdG1yLzE2NjQ4X1RpbWVyLnBuZx8IBQEjHwYCAmRkAgMPZBYEAgEPZBYCZg8PFgYfCQUPaW1nLWZsdWlkIHctMTAwHwoFP2h0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L3Jlc3VsdHMvcmFjZWxvZ28vMTY2NDgvMTY2NDhfMTM0LnBuZx8GAgJkZAIDDw8WBB8KBTZodHRwczovL2ltYWdlcy5yYWNldGVjLm5ldC9yZXN1bHRzL3Rtci8xNjY0OF9UaW1lci5wbmcfCAUBI2RkAgcPZBYQAgEPFgIfAmcWDgIBDw8WAh8EBRRSb2JlcnQgRWR1YXJkIFBldGVyIGRkAgMPFgIfAmhkAgUPFgIfAwUZYmFja2dyb3VuZC1jb2xvcjojMDc2OUFEOxYCAgEPDxYGHwQFAzUwNB8FCf////8fBgIEZGQCBw9kFgICAQ8PFgIfBAUENyBrbWRkAgkPZBYCAgEPDxYEHwkFcnRhYmxlIHRhYmxlLWJvcmRlcmxlc3MgdGFibGUtc20gdGFibGUtaG92ZXIgc21hbGwgYWxpZ24tbWlkZGxlIGx0dy1jZWxsLWNlbnRlciBsdHctbWFyZ2luLWJvdHRvbS0wIGx0dy10YWJsZS1maXhlZB8GAgJkZAILDxYCHwMFGWJhY2tncm91bmQtY29sb3I6IzA3NjlBRDsWAgIBDw8WBh8FCf////8fCAU5aHR0cHM6Ly9yZXN1bHRzLmZpbmlzaHRpbWUuY28uemEvQ29tcmFkZXNBdGhsZXRlLmFzcHg/aWQ9HwYCBGRkAg0PFgIfAmhkAgMPFgIfAmcWCgIBDxYCHwJnFhYCAQ8PFgIfBAULRmluaXNoIFRpbWVkZAIFDw8WBB8EBQdPVkVSQUxMHwJnZGQCBw8PFggfCQUObHR3LWZvbnQtbGFyZ2UfBAUEMi81MB8GAgIfAmdkZAIJDw8WBB8EBQhDQVRFR09SWR8CZ2RkAgsPDxYIHwkFDmx0dy1mb250LWxhcmdlHwQFAzEvMh8GAgIfAmdkZAINDw8WBB8EBQZHRU5ERVIfAmdkZAIPDw8WCB8JBQ5sdHctZm9udC1sYXJnZR8EBQQyLzI1HwYCAh8CZ2RkAhEPFgIfAmgWAgIBDw8WBB8EBQYwIExBUFMfAmhkZAITD2QWAgIBDw8WAh8EBQgwMDo0NDozMWRkAhUPFgIfAmgWAgIBDw8WBB8EBQYwIExBUFMfAmhkZAIXDw8WAh8EBQgwMDo0NDozMWRkAgMPFgIfAmgWFgIBDxYCHwJoZAIDDw8WAh8EBQhOZXQgVGltZWRkAgUPFgIfAmhkAgcPDxYCHwJoZGQCCQ8PFgYfCQUObHR3LWZvbnQtbGFyZ2UfBgICHwJoZGQCCw8PFgIfAmhkZAINDw8WBh8JBQ5sdHctZm9udC1sYXJnZR8GAgIfAmhkZAIPDw8WAh8CaGRkAhEPDxYGHwkFDmx0dy1mb250LWxhcmdlHwYCAh8CaGRkAhMPDxYCHwQFCDAwOjAwOjAwZGQCFQ8PFgIfBAUIMDA6MDA6MDBkZAIFDxYCHwJoZAIHDxYCHwJoZAIJDxYCHwJnFgICAQ8WAh4JaW5uZXJodG1sBaQCPGRpdiBjbGFzcz0iZC1mbGV4IGZsZXgtd3JhcCBqdXN0aWZ5LWNvbnRlbnQtY2VudGVyIGx0dy1zaGFyZS1wYWQiPjxkaXY+PGltZyBzcmM9Imh0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L2ZhL3ByaW50LnN2ZyIgc3R5bGU9IndpZHRoOiAyMHB4OyBoZWlnaHQ6IDIwcHgiLz48YSBjbGFzcz0ibHR3LXNoYXJlLXBhZCIgdGFyZ2V0PSJfYmxhbmsiIHN0eWxlID0iY29sb3I6ICMwMDAiIGhyZWY9ImNlcnQuYXNweD91aWQ9MTY2NDgtMTM0LTItODUzMyIiPlByaW50IENlcnRpZmljYXRlPC9hPjwvZGl2PjwvZGl2PmQCBQ8WAh8CaGQCBw8WAh8CaGQCCQ9kFgICAQ8WAh8CaGQCCw8PFgIfBAUjUm90YXRlIHlvdXIgZGV2aWNlIHRvIHNlZSBtb3JlIGRhdGFkZAINDxYCHwJoFgICAQ8PFgIfBAUKQWxsIFNwbGl0c2RkAg8PFgIfAmhkAgkPZBYCAgEPDxYGHwoFNmh0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L3Jlc3VsdHMvdG1yLzE2NjQ4X1RpbWVyLnBuZx8IBQEjHwJoZGQCCw8WAh8CaBYEAgEPDxYCHwoFJmh0dHBzOi8vaW1hZ2VzLnJhY2V0ZWMubmV0L1JhY2VUZWMucG5nZGQCAw8PFgIfBAULJmNvcHk7IDIwMjRkZGT0vYmfPLBGf4R8qPhOQU1OhHpwXA==">
 </div>
 
 <script type="text/javascript">
@@ -61,13 +61,14 @@ function __doPostBack(eventTarget, eventArgument) {
 
 	<input type="hidden" name="__VIEWSTATEGENERATOR" id="__VIEWSTATEGENERATOR" value="EF87DEBB">
 </div>
-    <script type="text/javascript">
-        $(window).on('load', function () {
-            $('#ctl00_popup').modal('show');
-        });
-    </script>
+        <script type="text/javascript">
+            $(window).on('load', function () {
+                $('#ctl00_popup').modal('show');
+            });
+        </script>
 
 
+        
         
         <div id="ctl00_divAll">
             <div id="ctl00_divRaceName" class="d-flex justify-content-between" style="background-color:#0769AD;">
@@ -104,6 +105,7 @@ function __doPostBack(eventTarget, eventArgument) {
                             
                         </li>
                         
+                        
                     </ul>
                     <ul class="navbar-nav ml-auto">
                         
@@ -128,16 +130,15 @@ function __doPostBack(eventTarget, eventArgument) {
                 </div>
             </div>
             
-            <div id="ctl00_divLogo" class="d-flex justify-content-center pb-1" align="center" style="background-color:#;">
-                <div class="row">
-                    <div id="ctl00_divLargeLogo" class="d-none d-sm-block">
-                        <a id="ctl00_hlLargeLogo" target="_blank"><img id="ctl00_imgLargeLogo" class="img-fluid" src="https://images.racetec.net/results/racelogo/16648/16648_134.png" style="border-width:0px;"></a>
-                        <a id="ctl00_hlTimerImageTop" class="d-none d-md-inline" href="#"><img src="https://images.racetec.net/results/tmr/16648_Timer.png" alt="" style="border-width:0px;"></a>
-                    </div>
-                    <div id="ctl00_divSmallLogo" class="d-block d-sm-none">
-                        <a id="ctl00_hlSmallLogo" target="_blank"><img id="ctl00_imgSmallLogo" class="img-fluid w-100" src="https://images.racetec.net/results/racelogo/16648/16648_134.png" style="border-width:0px;"></a>
-                        <a id="ctl00_hlSmallTimerImageTop" href="#"><img src="https://images.racetec.net/results/tmr/16648_Timer.png" alt="" style="border-width:0px;"></a>
-                    </div>
+            
+            <div id="ctl00_divLogo" align="center" class="d-flex justify-content-center pb-1" style="background-color:#;overflow:hidden;">
+                <div id="ctl00_divLargeLogo" class="d-none d-sm-block">
+                    <a id="ctl00_hlLargeLogo" target="_blank"><img id="ctl00_imgLargeLogo" class="img-fluid" src="https://images.racetec.net/results/racelogo/16648/16648_134.png" style="border-width:0px;"></a>
+                    <a id="ctl00_hlTimerImageTop" class="d-none d-md-inline" href="#"><img src="https://images.racetec.net/results/tmr/16648_Timer.png" alt="" style="border-width:0px;"></a>
+                </div>
+                <div id="ctl00_divSmallLogo" class="d-block d-sm-none">
+                    <a id="ctl00_hlSmallLogo" target="_blank"><img id="ctl00_imgSmallLogo" class="img-fluid w-100" src="https://images.racetec.net/results/racelogo/16648/16648_134.png" style="border-width:0px;"></a>
+                    <a id="ctl00_hlSmallTimerImageTop" href="#"><img src="https://images.racetec.net/results/tmr/16648_Timer.png" alt="" style="border-width:0px;"></a>
                 </div>
             </div>
         </div>
@@ -186,14 +187,18 @@ function __doPostBack(eventTarget, eventArgument) {
 </tbody></table>
                         </div>
                         
+
+                        
                     </div>
                 </div>
                 <div id="ctl00_Content_Main_divRight" class="col-12 col-lg-8">
                     <div class="ltw-raised-panel" align="center">
                         <div id="ctl00_Content_Main_divTime1" class="row">
                             <div class="col-7">
-                                <div style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #CCCCCC">
+                                <div>
                                     <span id="ctl00_Content_Main_lblTimeCaption1" class="h3">Finish Time</span>
+                                </div>
+                                <div id="ctl00_Content_Main_divGunTimeDivider" style="border-bottom-style: solid; border-bottom-width: thin; border-bottom-color: #CCCCCC">
                                 </div>
                                 <div class="row">
                                     <div class="col-6 col-sm-4 ltw-padding-0">
@@ -245,8 +250,10 @@ function __doPostBack(eventTarget, eventArgument) {
                         
                         
                         <div id="ctl00_Content_Main_divSocial2" class="ltw-raised-panel" align="center">
-                            <div id="ctl00_Content_Main_divSocialMedia2"><div class="d-flex flex-wrap justify-content-center ltw-share-pad"><div><i class="fa fa-print" style="vertical-align: middle; color: #007bff"></i><a class="ltw-share-pad" style="color: #000" href="cert.aspx?uid=16648-134-2-8533">Print Certificate</a></div></div></div>
+                            <div id="ctl00_Content_Main_divSocialMedia2"><div class="d-flex flex-wrap justify-content-center ltw-share-pad"><div><img src="https://images.racetec.net/fa/print.svg" style="width: 20px; height: 20px"><a class="ltw-share-pad" target="_blank" style="color: #000" href="cert.aspx?uid=16648-134-2-8533">Print Certificate</a></div></div></div>
                         </div>
+                    </div>
+                    <div id="ctl00_Content_Main_divTracker" class="row d-flex justify-content-center pb-1 pt-1">
                     </div>
                 </div>
 
@@ -267,17 +274,9 @@ function __doPostBack(eventTarget, eventArgument) {
         </div>
     </div>
 
-    <br>
-    <div align="center">
-        
-    </div>
-
         </div>
         <br>
         <div id="ctl00_divFooter" class="container">
-            <div class="d-flex justify-content-center hidden-xs">
-                
-            </div>
             <div class="d-flex justify-content-center pb-3">
                 
                 <a id="ctl00_hlSB1"></a>

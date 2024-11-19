@@ -18,11 +18,11 @@ class ResultsPageTest extends TestCase
 
         static::assertInstanceOf(Crawler::class, $crawler);
 
-        static::assertSame(
-            'https://racetecresults.com/Results.aspx?CId=16648&RId=163&EId=1&dt=0',
+        static::assertEquals(
+            'https://racetecresults.com/results.aspx?CId=16648&RId=163&EId=1&dt=0',
             $crawler->getUri()
         );
-//        file_put_contents(TEST_FIXTURE_PATH . '/Parsers/ResultsPage/netTime.html', $crawler->html());
+        file_put_contents(TEST_FIXTURE_PATH . '/Parsers/ResultsPage/netTime.html', $crawler->html());
     }
 
     public function testGetCrawlerHasSplits()
@@ -32,11 +32,11 @@ class ResultsPageTest extends TestCase
         static::assertInstanceOf(Crawler::class, $crawler);
 
         static::assertSame(
-            'https://racetecresults.com/Results.aspx?CId=16648&RId=168&EId=2&dt=0',
+            'https://racetecresults.com/results.aspx?CId=16648&RId=168&EId=2&dt=0',
             $crawler->getUri()
         );
 
-//        static::assertContains('Cristea Felix', $crawler->html());
+        static::assertStringContainsString('Cristea Felix', $crawler->html());
 
         file_put_contents(TEST_FIXTURE_PATH . '/Parsers/ResultsPage/has_splits.html', $crawler->html());
     }
@@ -48,7 +48,7 @@ class ResultsPageTest extends TestCase
         static::assertInstanceOf(Crawler::class, $crawler);
 
         static::assertSame(
-            'https://racetecresults.com/Results.aspx?CId=16648&RId=207&EId=2&dt=0',
+            'https://racetecresults.com/results.aspx?CId=16648&RId=207&EId=2&dt=0&PageNo=7',
             $crawler->getUri()
         );
 
@@ -64,7 +64,7 @@ class ResultsPageTest extends TestCase
         static::assertInstanceOf(Crawler::class, $crawler);
 
         static::assertSame(
-            'https://racetecresults.com/Results.aspx?CId=16648&RId=207&EId=1&dt=0',
+            'https://racetecresults.com/results.aspx?CId=16648&RId=207&EId=1&dt=0&PageNo=10',
             $crawler->getUri()
         );
 
@@ -80,7 +80,7 @@ class ResultsPageTest extends TestCase
         static::assertInstanceOf(Crawler::class, $crawler);
 
         static::assertSame(
-            'https://racetecresults.com/Results.aspx?CId=16648&RId=116&EId=1&dt=0',
+            'https://racetecresults.com/results.aspx?CId=16648&RId=116&EId=1&dt=0',
             $crawler->getUri()
         );
 
@@ -91,12 +91,12 @@ class ResultsPageTest extends TestCase
 
     public function testGetCrawlerNoCategory()
     {
-        $crawler = $this->getCrawler(6004, 1, 1);
+        $crawler = $this->getCrawler(361);
 
         static::assertInstanceOf(Crawler::class, $crawler);
 
         static::assertSame(
-            'https://racetecresults.com/Results.aspx?CId=16648&RId=6004&EId=1&dt=0',
+            'https://racetecresults.com/results.aspx?CId=16648&RId=361&EId=1&dt=0',
             $crawler->getUri()
         );
 //        file_put_contents(TEST_FIXTURE_PATH . '/Parsers/ResultsPage/no_category.html', $crawler->html());
@@ -104,19 +104,19 @@ class ResultsPageTest extends TestCase
 
     public function testGetCrawlerHtml()
     {
-        $crawler = $this->getCrawler();
+        $crawler = $this->getCrawler(163, 1, 10);
 
         static::assertInstanceOf(Crawler::class, $crawler);
 
-        static::assertContains('Dragan Antoaneta', $crawler->html());
-        static::assertContains('Foca Oana Maria', $crawler->html());
+        static::assertStringContainsString('Dragan Antoaneta', $crawler->html());
+        static::assertStringContainsString('Foca Oana Maria', $crawler->html());
         file_put_contents(TEST_FIXTURE_PATH . '/Parsers/results_page.html', $crawler->html());
     }
 
     /**
      * @return Crawler
      */
-    protected function getCrawler($rId = 163, $eId = 1, $page = 10)
+    protected function getCrawler($rId = 163, $eId = 1, $page = 1)
     {
         $params = ['cId' => 16648, 'rId' => $rId, 'eId' => $eId, 'page' => $page];
         $scraper = new ResultsPage();
